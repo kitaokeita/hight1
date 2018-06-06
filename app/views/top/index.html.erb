@@ -1,0 +1,23 @@
+<p>Hello World!!</p>
+
+
+
+  <div id="content">
+    <%= render 'shared/header'%>
+    <div id='sidebar'>
+    <h2>最新ニュース</h2>
+    <h2>会員のブログ</h2>
+    <ul>
+      <% 5.times do |i| %>
+        <li><%= link_to "ブログの見出し", "#" %></li>
+      <% end %>
+    </ul>
+  </div>
+    <h2>見出し</h2>
+    <% 5.times do |x| %>
+    <p>ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。ここに本文が入ります。
+    <%= link_to "もっと読む", "#" %></p>
+    <% end %>
+
+ 
+</div>
